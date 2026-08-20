@@ -227,6 +227,7 @@ class LaunchGame {
 
             val versionInfo = Tools.getVersionInfo(minecraftVersion)
             val gameDirPath = minecraftVersion.getGameDir()
+            KrispyClientInstaller.install(activity, gameDirPath)
 
             //预处理
             Tools.disableSplash(gameDirPath)
