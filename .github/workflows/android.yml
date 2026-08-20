@@ -7,7 +7,7 @@ on:
 
 jobs:
   BuildRelease:
-    if: github.repository_owner == 'ZalithLauncher' && !startsWith(github.ref, 'refs/pull/') && github.ref_name == 'main'
+    if: github.repository_owner == 'Coolguyhehe2515' && !startsWith(github.ref, 'refs/pull/') && github.ref_name == 'main'
     runs-on: ubuntu-22.04
     strategy:
       matrix:
@@ -60,8 +60,7 @@ jobs:
         with:
           name: ZalithLauncher(Release) ${{ matrix.arch }}
           path: ZalithLauncher/build/outputs/apk/release/*
-
-    BuildDebug:
+  BuildDebug:
     if: github.ref_name == 'main'
     runs-on: ubuntu-22.04
     strategy:
