@@ -61,8 +61,8 @@ jobs:
           name: ZalithLauncher(Release) ${{ matrix.arch }}
           path: ZalithLauncher/build/outputs/apk/release/*
 
-  BuildDebug:
-    if: startsWith(github.ref, 'refs/pull/') || github.ref_name != 'main'
+    BuildDebug:
+    if: github.ref_name == 'main'
     runs-on: ubuntu-22.04
     strategy:
       matrix:
