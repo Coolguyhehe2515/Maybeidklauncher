@@ -38,6 +38,7 @@ import net.kdt.pojavlaunch.tasks.MinecraftDownloader
 import net.kdt.pojavlaunch.utils.JREUtils
 import net.kdt.pojavlaunch.value.MinecraftAccount
 import org.greenrobot.eventbus.EventBus
+import com.movtery.zalithlauncher.feature.krispyclient.KrispyClientInstaller
 
 class LaunchGame {
     companion object {
